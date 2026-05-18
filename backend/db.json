@@ -1,0 +1,100 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@email.com",
+      "password": "123456"
+    },
+    {
+      "id": "YVJAmjCcmng",
+      "email": "raissa@gmail",
+      "password": "1234"
+    },
+    {
+      "id": "Kx3JykuWn4Q",
+      "email": "raissa@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "ZZWFjB-TJy4",
+      "email": "rai",
+      "password": "1234"
+    },
+    {
+      "id": "Df4_2uzGmsw",
+      "email": "raissa@gmail.com.br",
+      "password": "1234567"
+    }
+  ],
+  "books": [
+    {
+      "name": "É Assim Que Acaba ",
+      "author": "Colleen Hoover",
+      "cover": "file:///var/mobile/Containers/Data/Application/56C31470-7310-4A2F-A72A-D26032A73247/Library/Caches/ExponentExperienceData/@anonymous/NoteBookApp-33d59bb1-0a1d-4887-b612-1833b7d630f9/ImagePicker/0F10FE08-75AC-4A45-8104-FDC2DACE9E1D.jpg",
+      "id": "MqYU9HbQ6_8"
+    },
+    {
+      "name": "O Rei Macaco ",
+      "author": "Tiago Feres",
+      "cover": "file:///var/mobile/Containers/Data/Application/56C31470-7310-4A2F-A72A-D26032A73247/Library/Caches/ExponentExperienceData/@anonymous/NoteBookApp-33d59bb1-0a1d-4887-b612-1833b7d630f9/ImagePicker/1DA40915-21B3-4C63-9651-8D67EA7465D6.jpg",
+      "id": "igqoyRog3dQ"
+    },
+    {
+      "name": "A Empregada ",
+      "author": "Freida McFadden",
+      "cover": "file:///var/mobile/Containers/Data/Application/56C31470-7310-4A2F-A72A-D26032A73247/Library/Caches/ExponentExperienceData/@anonymous/NoteBookApp-33d59bb1-0a1d-4887-b612-1833b7d630f9/ImagePicker/E4583AF8-6AC7-4BAF-BD1D-D8B9A5BB702E.jpg",
+      "id": "SBlNn2-n9Y8"
+    },
+    {
+      "name": "O filho perfeito ",
+      "author": "Freida McFadden",
+      "cover": "file:///var/mobile/Containers/Data/Application/56C31470-7310-4A2F-A72A-D26032A73247/Library/Caches/ExponentExperienceData/@anonymous/NoteBookApp-33d59bb1-0a1d-4887-b612-1833b7d630f9/ImagePicker/0C073EB7-32B0-45E2-9AC3-E50E1A28103F.jpg",
+      "id": "jLxBzZV6PMo"
+    },
+    {
+      "name": "O Acidente ",
+      "author": "Freida McFadden ",
+      "cover": "file:///var/mobile/Containers/Data/Application/56C31470-7310-4A2F-A72A-D26032A73247/Library/Caches/ExponentExperienceData/@anonymous/NoteBookApp-33d59bb1-0a1d-4887-b612-1833b7d630f9/ImagePicker/53054420-B488-430D-B5A9-88F71D54A6AB.png",
+      "id": "WDxRGMMn8yo"
+    }
+  ],
+  "reviews": [
+    {
+      "bookId": "MqYU9HbQ6_8",
+      "bookName": "É Assim Que Acaba ",
+      "bookAuthor": "Colleen Hoover",
+      "bookCover": "file:///var/mobile/Containers/Data/Application/56C31470-7310-4A2F-A72A-D26032A73247/Library/Caches/ExponentExperienceData/@anonymous/NoteBookApp-33d59bb1-0a1d-4887-b612-1833b7d630f9/ImagePicker/0F10FE08-75AC-4A45-8104-FDC2DACE9E1D.jpg",
+      "rating": 5,
+      "comment": "Top gostei demais,recomendo muito ler esse livro.\n\n",
+      "id": "gIPoGPu0m5A"
+    },
+    {
+      "bookId": "igqoyRog3dQ",
+      "bookName": "O Rei Macaco ",
+      "bookAuthor": "Tiago Feres",
+      "bookCover": "file:///var/mobile/Containers/Data/Application/56C31470-7310-4A2F-A72A-D26032A73247/Library/Caches/ExponentExperienceData/@anonymous/NoteBookApp-33d59bb1-0a1d-4887-b612-1833b7d630f9/ImagePicker/1DA40915-21B3-4C63-9651-8D67EA7465D6.jpg",
+      "rating": 5,
+      "comment": "Livro muito bom",
+      "id": "-8Uz5Ojl2CY"
+    },
+    {
+      "bookId": "SBlNn2-n9Y8",
+      "bookName": "A Empregada ",
+      "bookAuthor": "Freida McFadden",
+      "bookCover": "file:///var/mobile/Containers/Data/Application/56C31470-7310-4A2F-A72A-D26032A73247/Library/Caches/ExponentExperienceData/@anonymous/NoteBookApp-33d59bb1-0a1d-4887-b612-1833b7d630f9/ImagePicker/E4583AF8-6AC7-4BAF-BD1D-D8B9A5BB702E.jpg",
+      "rating": 4,
+      "comment": "Gostei, porém esperava mais da autora.",
+      "id": "iJeAIX9682Q"
+    },
+    {
+      "bookId": "WDxRGMMn8yo",
+      "bookName": "O Acidente ",
+      "bookAuthor": "Freida McFadden ",
+      "bookCover": "file:///var/mobile/Containers/Data/Application/56C31470-7310-4A2F-A72A-D26032A73247/Library/Caches/ExponentExperienceData/@anonymous/NoteBookApp-33d59bb1-0a1d-4887-b612-1833b7d630f9/ImagePicker/53054420-B488-430D-B5A9-88F71D54A6AB.png",
+      "rating": 3,
+      "comment": "Ótimo livro",
+      "id": "jgLRxzrEm_c"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
