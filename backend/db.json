@@ -24,6 +24,11 @@
       "id": "Df4_2uzGmsw",
       "email": "raissa@gmail.com.br",
       "password": "1234567"
+    },
+    {
+      "id": "playwright-test-user",
+      "email": "teste@email.com",
+      "password": "SenhaAnterior@123"
     }
   ],
   "books": [
@@ -96,5 +101,12 @@
       "id": "jgLRxzrEm_c"
     }
   ],
+  "recuperar-senha": {
+    "sucesso": true,
+    "mensagem": "Email enviado com sucesso"
+  },
+  "resetar-senha": {
+    "sucesso": true
+  },
   "$schema": "./node_modules/json-server/schema.json"
 }

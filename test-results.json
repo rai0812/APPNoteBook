@@ -1,0 +1,582 @@
+{
+  "config": {
+    "configFile": "C:\\APP\\NoteBookApp\\playwright.config.ts",
+    "rootDir": "C:/APP/NoteBookApp/test",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/APP/NoteBookApp/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/APP/NoteBookApp/test",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ],
+      [
+        "list",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.60.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "api\\recuperacao-senha.spec.ts",
+      "file": "api/recuperacao-senha.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "API - Sistema de Recuperação de Senha",
+          "file": "api/recuperacao-senha.spec.ts",
+          "line": 25,
+          "column": 6,
+          "specs": [],
+          "suites": [
+            {
+              "title": "B1: Solicitação de Reset com Email Válido",
+              "file": "api/recuperacao-senha.spec.ts",
+              "line": 27,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "T-API-01: Deve gerar token e retornar sucesso",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 331,
+                          "error": {
+                            "message": "Error: apiRequestContext.post: connect ECONNREFUSED ::1:3001\nCall log:\n\u001b[2m  - → POST http://localhost:3001/recuperar-senha\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 27\u001b[22m\n",
+                            "stack": "Error: apiRequestContext.post: connect ECONNREFUSED ::1:3001\nCall log:\n\u001b[2m  - → POST http://localhost:3001/recuperar-senha\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 27\u001b[22m\n\n    at apiRequestContext.post: connect ECONNREFUSED ::1:3001\n    at C:\\APP\\NoteBookApp\\test\\api\\recuperacao-senha.spec.ts:30:38",
+                            "location": {
+                              "file": "apiRequestContext.post: connect ECONNREFUSED :",
+                              "column": 3001,
+                              "line": 1
+                            }
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "apiRequestContext.post: connect ECONNREFUSED :",
+                                "column": 3001,
+                                "line": 1
+                              },
+                              "message": "Error: apiRequestContext.post: connect ECONNREFUSED ::1:3001\nCall log:\n\u001b[2m  - → POST http://localhost:3001/recuperar-senha\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 27\u001b[22m\n\n\u001b[2m    at apiRequestContext.post: connect ECONNREFUSED ::1:3001\u001b[22m\n\u001b[2m    at C:\\APP\\NoteBookApp\\test\\api\\recuperacao-senha.spec.ts:30:38\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-06-17T13:56:35.671Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\APP\\NoteBookApp\\test-results\\api-recuperacao-senha-API--c9c2f-ar-token-e-retornar-sucesso-chromium\\error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "apiRequestContext.post: connect ECONNREFUSED :",
+                            "column": 3001,
+                            "line": 1
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "8b9a4ad2e134de0d9573-f68679365eeed251b933",
+                  "file": "api/recuperacao-senha.spec.ts",
+                  "line": 29,
+                  "column": 9
+                },
+                {
+                  "title": "T-API-01-SEC: Resposta contém formato válido",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 337,
+                          "error": {
+                            "message": "Error: apiRequestContext.post: connect ECONNREFUSED ::1:3001\nCall log:\n\u001b[2m  - → POST http://localhost:3001/recuperar-senha\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 27\u001b[22m\n",
+                            "stack": "Error: apiRequestContext.post: connect ECONNREFUSED ::1:3001\nCall log:\n\u001b[2m  - → POST http://localhost:3001/recuperar-senha\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 27\u001b[22m\n\n    at apiRequestContext.post: connect ECONNREFUSED ::1:3001\n    at C:\\APP\\NoteBookApp\\test\\api\\recuperacao-senha.spec.ts:40:38",
+                            "location": {
+                              "file": "apiRequestContext.post: connect ECONNREFUSED :",
+                              "column": 3001,
+                              "line": 1
+                            }
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "apiRequestContext.post: connect ECONNREFUSED :",
+                                "column": 3001,
+                                "line": 1
+                              },
+                              "message": "Error: apiRequestContext.post: connect ECONNREFUSED ::1:3001\nCall log:\n\u001b[2m  - → POST http://localhost:3001/recuperar-senha\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 27\u001b[22m\n\n\u001b[2m    at apiRequestContext.post: connect ECONNREFUSED ::1:3001\u001b[22m\n\u001b[2m    at C:\\APP\\NoteBookApp\\test\\api\\recuperacao-senha.spec.ts:40:38\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-06-17T13:56:36.488Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\APP\\NoteBookApp\\test-results\\api-recuperacao-senha-API--65deb-posta-contém-formato-válido-chromium\\error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "apiRequestContext.post: connect ECONNREFUSED :",
+                            "column": 3001,
+                            "line": 1
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "8b9a4ad2e134de0d9573-6450b9b8c08aaefa780d",
+                  "file": "api/recuperacao-senha.spec.ts",
+                  "line": 39,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "B4: Email Não Existe",
+              "file": "api/recuperacao-senha.spec.ts",
+              "line": 48,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "T-API-02: Simular retorno de erro para email inexistente",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 331,
+                          "error": {
+                            "message": "Error: apiRequestContext.post: connect ECONNREFUSED ::1:3001\nCall log:\n\u001b[2m  - → POST http://localhost:3001/recuperar-senha\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 31\u001b[22m\n",
+                            "stack": "Error: apiRequestContext.post: connect ECONNREFUSED ::1:3001\nCall log:\n\u001b[2m  - → POST http://localhost:3001/recuperar-senha\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 31\u001b[22m\n\n    at apiRequestContext.post: connect ECONNREFUSED ::1:3001\n    at C:\\APP\\NoteBookApp\\test\\api\\recuperacao-senha.spec.ts:51:38",
+                            "location": {
+                              "file": "apiRequestContext.post: connect ECONNREFUSED :",
+                              "column": 3001,
+                              "line": 1
+                            }
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "apiRequestContext.post: connect ECONNREFUSED :",
+                                "column": 3001,
+                                "line": 1
+                              },
+                              "message": "Error: apiRequestContext.post: connect ECONNREFUSED ::1:3001\nCall log:\n\u001b[2m  - → POST http://localhost:3001/recuperar-senha\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 31\u001b[22m\n\n\u001b[2m    at apiRequestContext.post: connect ECONNREFUSED ::1:3001\u001b[22m\n\u001b[2m    at C:\\APP\\NoteBookApp\\test\\api\\recuperacao-senha.spec.ts:51:38\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-06-17T13:56:37.318Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\APP\\NoteBookApp\\test-results\\api-recuperacao-senha-API--3189b-erro-para-email-inexistente-chromium\\error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "apiRequestContext.post: connect ECONNREFUSED :",
+                            "column": 3001,
+                            "line": 1
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "8b9a4ad2e134de0d9573-837a478d4c3388b88764",
+                  "file": "api/recuperacao-senha.spec.ts",
+                  "line": 50,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "B5: Email Inválido (Formato)",
+              "file": "api/recuperacao-senha.spec.ts",
+              "line": 61,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "T-API-03: Deve rejeitar ou processar formato de email sem @",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 338,
+                          "error": {
+                            "message": "Error: apiRequestContext.post: connect ECONNREFUSED ::1:3001\nCall log:\n\u001b[2m  - → POST http://localhost:3001/recuperar-senha\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 26\u001b[22m\n",
+                            "stack": "Error: apiRequestContext.post: connect ECONNREFUSED ::1:3001\nCall log:\n\u001b[2m  - → POST http://localhost:3001/recuperar-senha\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 26\u001b[22m\n\n    at apiRequestContext.post: connect ECONNREFUSED ::1:3001\n    at C:\\APP\\NoteBookApp\\test\\api\\recuperacao-senha.spec.ts:64:38",
+                            "location": {
+                              "file": "apiRequestContext.post: connect ECONNREFUSED :",
+                              "column": 3001,
+                              "line": 1
+                            }
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "apiRequestContext.post: connect ECONNREFUSED :",
+                                "column": 3001,
+                                "line": 1
+                              },
+                              "message": "Error: apiRequestContext.post: connect ECONNREFUSED ::1:3001\nCall log:\n\u001b[2m  - → POST http://localhost:3001/recuperar-senha\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 26\u001b[22m\n\n\u001b[2m    at apiRequestContext.post: connect ECONNREFUSED ::1:3001\u001b[22m\n\u001b[2m    at C:\\APP\\NoteBookApp\\test\\api\\recuperacao-senha.spec.ts:64:38\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-06-17T13:56:38.131Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\APP\\NoteBookApp\\test-results\\api-recuperacao-senha-API--dbfb4-essar-formato-de-email-sem--chromium\\error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "apiRequestContext.post: connect ECONNREFUSED :",
+                            "column": 3001,
+                            "line": 1
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "8b9a4ad2e134de0d9573-a7263cb2c48d28b64389",
+                  "file": "api/recuperacao-senha.spec.ts",
+                  "line": 63,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "B9: Rate Limiting",
+              "file": "api/recuperacao-senha.spec.ts",
+              "line": 73,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "T-API-04: Deve permitir requisições repetidas no mock",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 342,
+                          "error": {
+                            "message": "Error: apiRequestContext.post: connect ECONNREFUSED ::1:3001\nCall log:\n\u001b[2m  - → POST http://localhost:3001/recuperar-senha\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 50\u001b[22m\n",
+                            "stack": "Error: apiRequestContext.post: connect ECONNREFUSED ::1:3001\nCall log:\n\u001b[2m  - → POST http://localhost:3001/recuperar-senha\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 50\u001b[22m\n\n    at apiRequestContext.post: connect ECONNREFUSED ::1:3001\n    at C:\\APP\\NoteBookApp\\test\\api\\recuperacao-senha.spec.ts:78:38",
+                            "location": {
+                              "file": "apiRequestContext.post: connect ECONNREFUSED :",
+                              "column": 3001,
+                              "line": 1
+                            }
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "apiRequestContext.post: connect ECONNREFUSED :",
+                                "column": 3001,
+                                "line": 1
+                              },
+                              "message": "Error: apiRequestContext.post: connect ECONNREFUSED ::1:3001\nCall log:\n\u001b[2m  - → POST http://localhost:3001/recuperar-senha\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 50\u001b[22m\n\n\u001b[2m    at apiRequestContext.post: connect ECONNREFUSED ::1:3001\u001b[22m\n\u001b[2m    at C:\\APP\\NoteBookApp\\test\\api\\recuperacao-senha.spec.ts:78:38\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-06-17T13:56:38.948Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\APP\\NoteBookApp\\test-results\\api-recuperacao-senha-API--5a353-quisições-repetidas-no-mock-chromium\\error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "apiRequestContext.post: connect ECONNREFUSED :",
+                            "column": 3001,
+                            "line": 1
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "8b9a4ad2e134de0d9573-4f7eed680998e946898d",
+                  "file": "api/recuperacao-senha.spec.ts",
+                  "line": 75,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "B3: Reset de Senha com Token Válido",
+              "file": "api/recuperacao-senha.spec.ts",
+              "line": 87,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "T-API-06: Deve simular reset de senha",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 5,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 328,
+                          "error": {
+                            "message": "Error: apiRequestContext.post: connect ECONNREFUSED ::1:3001\nCall log:\n\u001b[2m  - → POST http://localhost:3001/resetar-senha\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 64\u001b[22m\n",
+                            "stack": "Error: apiRequestContext.post: connect ECONNREFUSED ::1:3001\nCall log:\n\u001b[2m  - → POST http://localhost:3001/resetar-senha\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 64\u001b[22m\n\n    at apiRequestContext.post: connect ECONNREFUSED ::1:3001\n    at C:\\APP\\NoteBookApp\\test\\api\\recuperacao-senha.spec.ts:90:43",
+                            "location": {
+                              "file": "apiRequestContext.post: connect ECONNREFUSED :",
+                              "column": 3001,
+                              "line": 1
+                            }
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "apiRequestContext.post: connect ECONNREFUSED :",
+                                "column": 3001,
+                                "line": 1
+                              },
+                              "message": "Error: apiRequestContext.post: connect ECONNREFUSED ::1:3001\nCall log:\n\u001b[2m  - → POST http://localhost:3001/resetar-senha\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 64\u001b[22m\n\n\u001b[2m    at apiRequestContext.post: connect ECONNREFUSED ::1:3001\u001b[22m\n\u001b[2m    at C:\\APP\\NoteBookApp\\test\\api\\recuperacao-senha.spec.ts:90:43\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-06-17T13:56:39.758Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\APP\\NoteBookApp\\test-results\\api-recuperacao-senha-API--49ab5-Deve-simular-reset-de-senha-chromium\\error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "apiRequestContext.post: connect ECONNREFUSED :",
+                            "column": 3001,
+                            "line": 1
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "8b9a4ad2e134de0d9573-4988a974ccccf0039cb7",
+                  "file": "api/recuperacao-senha.spec.ts",
+                  "line": 89,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "B6: Token Expirado",
+              "file": "api/recuperacao-senha.spec.ts",
+              "line": 102,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "T-API-05: Validação de rota de reset",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 329,
+                          "error": {
+                            "message": "Error: apiRequestContext.post: connect ECONNREFUSED ::1:3001\nCall log:\n\u001b[2m  - → POST http://localhost:3001/resetar-senha\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 59\u001b[22m\n",
+                            "stack": "Error: apiRequestContext.post: connect ECONNREFUSED ::1:3001\nCall log:\n\u001b[2m  - → POST http://localhost:3001/resetar-senha\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 59\u001b[22m\n\n    at apiRequestContext.post: connect ECONNREFUSED ::1:3001\n    at C:\\APP\\NoteBookApp\\test\\api\\recuperacao-senha.spec.ts:105:38",
+                            "location": {
+                              "file": "apiRequestContext.post: connect ECONNREFUSED :",
+                              "column": 3001,
+                              "line": 1
+                            }
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "apiRequestContext.post: connect ECONNREFUSED :",
+                                "column": 3001,
+                                "line": 1
+                              },
+                              "message": "Error: apiRequestContext.post: connect ECONNREFUSED ::1:3001\nCall log:\n\u001b[2m  - → POST http://localhost:3001/resetar-senha\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.7778.96 Safari/537.36\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 59\u001b[22m\n\n\u001b[2m    at apiRequestContext.post: connect ECONNREFUSED ::1:3001\u001b[22m\n\u001b[2m    at C:\\APP\\NoteBookApp\\test\\api\\recuperacao-senha.spec.ts:105:38\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-06-17T13:56:40.557Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\APP\\NoteBookApp\\test-results\\api-recuperacao-senha-API--08022--Validação-de-rota-de-reset-chromium\\error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "apiRequestContext.post: connect ECONNREFUSED :",
+                            "column": 3001,
+                            "line": 1
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "8b9a4ad2e134de0d9573-610ad5027537f8952877",
+                  "file": "api/recuperacao-senha.spec.ts",
+                  "line": 104,
+                  "column": 9
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-06-17T13:56:35.130Z",
+    "duration": 5822.575,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 7,
+    "flaky": 0
+  }
+}
